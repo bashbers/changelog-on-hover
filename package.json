@@ -16,6 +16,7 @@
     "url": "https://github.com/bashbers/changelog-on-hover"
   },
   "main": "./dist/extension.js",
+  "publisher": "bashbers-changelogonhover",
   "contributes": {
     "configuration": {
       "title": "Changelog on hover",
