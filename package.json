@@ -1,8 +1,10 @@
 {
   "name": "changelog-on-hover",
-  "displayName": "changelog-on-hover",
+  "displayName": "Changelog On Hover",
   "description": "Simple and easy; Show changelog.md provided in node_modules.",
-  "version": "1.0.1",
+  "publisher": "bashbers-changelogonhover",
+  "icon": "assets/img/logo.jpg",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -16,7 +18,6 @@
     "url": "https://github.com/bashbers/changelog-on-hover"
   },
   "main": "./dist/extension.js",
-  "publisher": "bashbers-changelogonhover",
   "contributes": {
     "configuration": {
       "title": "Changelog on hover",
