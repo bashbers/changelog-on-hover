@@ -1,0 +1,73 @@
+{
+  "name": "changelog-on-hover",
+  "displayName": "changelog-on-hover",
+  "description": "Simple and easy; Show changelog.md provided in node_modules.",
+  "version": "1.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Changelog on hover",
+      "properties": {
+        "changelogOnHover.amountOfLines": {
+          "type": "number",
+          "default": 25,
+          "description": "How many changelog lines should be shown in the hover menu. Use -1 if you want to see the whole changelog in the hover menu."
+        },
+        "changelogOnHover.buttonText": {
+          "type": "string",
+          "default": "Open changelog",
+          "description": "Name of the button appended at the end of the changelog which links to the changelog."
+        },
+        "changelogOnHover.changelogOptions": {
+          "type": "array",
+          "default": [
+            "CHANGELOG.md",
+            "changelog.md",
+            "CHANGELOG.MD"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "All the possible options for the name of the file containing the changelog."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.54.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
+  }
+}
