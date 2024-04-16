@@ -3,7 +3,7 @@
   "displayName": "Changelog On Hover",
   "description": "Simple and easy; Show changelog.md provided in node_modules.",
   "publisher": "bashbers-changelogonhover",
-  "icon": "assets/img/logo.jpg",
+  "icon": "assets/img/logo.png",
   "version": "1.0.2",
   "engines": {
     "vscode": "^1.54.0"
