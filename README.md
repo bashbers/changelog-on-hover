@@ -1,8 +1,8 @@
-# changelog-on-hover README
+# 🔎 Changelog On Hover
 
 ## Features
 
-![Changelog on hover](assets/img/changelog-2.png)
+![Changelog on hover](assets/img/demo.gif)
 
 It retrieves the locally provided changelog.md from node_modules. Ideal to quickly determine the latest changes for a given dependency!
 

@@ -1,10 +1,10 @@
 {
   "name": "changelog-on-hover",
   "displayName": "Changelog On Hover",
-  "description": "Simple and easy; Show changelog.md provided in node_modules.",
+  "description": "🔎 Show changelog.md of packages provided in node_modules.",
   "publisher": "bashbers-changelogonhover",
   "icon": "assets/img/logo.png",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -17,6 +17,12 @@
   "repository": {
     "url": "https://github.com/bashbers/changelog-on-hover"
   },
+  "keywords": [
+    "changelog",
+    "hover",
+    "package.json"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
